@@ -1,11 +1,9 @@
 class Solution:
-    def hasDuplicate(self, nums: List[int]) -> bool:
-        seen = set()
-        for n in nums:
-            if n in seen:
-                return True
-            seen.add(n)
-        return False
-        
+    def isAnagram(self, s: str, t: str) -> bool:
+        #if len(s)!=len(t):
+            #return False
+        return Counter(s)==Counter(t)
 
+       
+        
         
